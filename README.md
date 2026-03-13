@@ -17,7 +17,9 @@ swaybg \
 pavucontrol \
 btop \
 stow \
-ranger
+ranger \
+kitty \
+zsh(for zsh plugin zsh-syntax-highlighting, and theme powerlevel10k)
 
 ## Installation
 1. Create a folder ".dotfiles" in your home directory.
@@ -57,3 +59,5 @@ ranger
 ## Key Bindings
 
 in development
+
+`Mod+alt+W` - open wallpapers
