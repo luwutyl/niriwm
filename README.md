@@ -20,7 +20,6 @@ stow
 
 ## Installation
 Create a folder called ".dotfiles" in your home directory.
----
-`cd`
+
+`cd` \
 `mkdir .dotfiles`
----
