@@ -20,7 +20,7 @@ stow \
 ranger
 
 ## Installation
-1. Create a folder called ".dotfiles" in your home directory.
+1. Create a folder ".dotfiles" in your home directory.
 
 `cd` \
 `mkdir .dotfiles`
