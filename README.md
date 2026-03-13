@@ -23,7 +23,7 @@ ranger
 1. Create a folder ".dotfiles" in your home directory.
 
 `cd` \
-`mkdir .dotfiles`
+`mkdir .dotfiles` \
 `cd .dotfiles`
 
 2. Clone the repository
