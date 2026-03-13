@@ -19,7 +19,8 @@ btop \
 stow \
 ranger \
 kitty \
-zsh(for zsh plugin zsh-syntax-highlighting, and theme powerlevel10k)
+zsh(for zsh plugin zsh-syntax-highlighting, and theme powerlevel10k) \
+playerctl
 
 ## Installation
 1. Create a folder ".dotfiles" in your home directory.
