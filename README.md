@@ -3,7 +3,8 @@ My dotfiles aren't a ready-made solution; you'll need some level of familiarity 
 
 ## Dependencies
 ### aur
-niri-wip-git
+niri-wip-git \
+eww
 
 ### pacman 
 hyprlock \
