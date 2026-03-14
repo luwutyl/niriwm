@@ -49,10 +49,10 @@ playerctl
 `rm -rf ~/.config/niri` \
 `rm -rf ~/.config/ranger` \
 `rm -rf ~/.config/rofi` \
-`rm -rf ~/.config/waybar` \
+`rm -rf ~/.config/waybar` 
 
 `cd ~/.dotfiles` \
-`stow .` \
+`stow .` 
 
 6. open niri
 
