@@ -81,6 +81,7 @@
         "format": "{icon0}{icon1}{icon2}{icon3}{icon4}{icon5}{icon6}{icon7}",
         "format-icons": ["▁", "▂", "▃", "▄", "▅", "▆", "▇", "█"],
         "interval": 1,
+        "rotate": 270,
         "on-click": "/home/uwuty/.config/waybar/scripts/bt.sh --app spbtop --spawn 'kitty --app-id spbtop -e btop'",
         "states": {
             "s5": 5, "s10": 10, "s15": 15, "s20": 20, "s25": 25,

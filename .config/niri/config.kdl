@@ -1,7 +1,7 @@
 // This config is in the KDL format: https://kdl.dev
 // "/-" comments out the following node.
 // Check the wiki for a full description of the configuration:
-// https://yalter.github.io/niri/Configuration:-Introduction
+// https://yalter.github.ir/niri/Configuration:-Introduction
 
 // Input device configuration.
 // Find the full list of options on the wiki:
@@ -14,7 +14,7 @@ input {
 
             // For example:
             layout "us,ru"
-            options "grp:shifts_toggle,compose:ralt,ctrl:nocaps"
+            options "grp:shifts_toggle,compose:ralt,caps:escape"
 
             // If this section is empty, niri will fetch xkb settings
             // from org.freedesktop.locale1. You can control these using
@@ -732,7 +732,7 @@ binds {
     Mod+Ctrl+G { spawn-sh "~/.config/niri/scripts/resise.sh 1728 972"; }
     Mod+alt+G { spawn-sh "~/.config/niri/scripts/resise.sh 900 970"; }
     //Mod+Z { spawn-sh "cliphist list | fuzzel -d | cliphist decode | wl-copy"; }
-    Mod+Z { spawn-sh "~/.local/bin/cliphist-fuzzel-img"; }
+    Mod+Z { spawn-sh "~/.config/niri/scripts/cliphist-fuzzel-img"; }
     //Mod+alt+Ctrl+H { spawn-sh "~/.config/niri/scripts/resise-tile.sh -50"; }
     //Mod+alt+Ctrl+L { spawn-sh "~/.config/niri/scripts/resise-tile.sh +50"; }
     //Mod+alt+Ctrl+J { spawn-sh "~/.config/niri/scripts/resise-tile-height.sh -50"; }

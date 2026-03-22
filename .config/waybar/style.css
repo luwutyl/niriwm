@@ -20,14 +20,14 @@ window#waybar {
 #custom-notification,
 #clock,
 #workspaces {
-  box-shadow: 0 0 5px rgba(0, 0, 0, 0.35);
+  box-shadow: 0 0 4px rgba(28, 28, 28, 0.6);
   background-color: #282828;
   border-radius: 10px;
   margin-left: 5px;
   margin-right: 5px;
   margin-top: 5px;
   margin-bottom: 2px;
-  text-shadow: 0 0 8px #fabd2f;
+  text-shadow: 0 0 4px #fabd2f;
 }
 
 #clock {
@@ -50,12 +50,15 @@ window#waybar {
 }
 
 #workspaces button {
+  color: #ebdbb2;
+  text-shadow: 0 0 10 #ebdbb2;
   padding: 2px 0px;
 }
 
 #workspaces button:hover {
   color: #fabd2f;
   background-color: #282828;
+  text-shadow: 0 0 4px #fabd2f;
 }
 
 #workspaces button.urgent {
@@ -114,69 +117,66 @@ tooltip {
     color: #458588;
 }
 
-/* Низкая нагрузка (Спокойный Teal/Green) */
-#memory.5 { border-color: #83a598; color: #83a598; } /* blue */
-#memory.10 { border-color: #8ec07c; color: #8ec07c; } /* green */
-#memory.15 { border-color: #b8bb26; color: #b8bb26; } /* aqua */
-#memory.20 { border-color: #fabd2f; color: #fabd2f; } /* yellow */
-#memory.25 { border-color: #fabd2f; color: #fabd2f; }
-#memory.30 { border-color: #fabd2f; color: #fabd2f; }
+#memory.5  { color: #83a598; border-color: #83a598; }
+#memory.10 { color: #8cb28a; border-color: #8cb28a; }
+#memory.15 { color: #8ec07c; border-color: #8ec07c; }
 
-/* Средняя нагрузка (Мягкий Оранжевый) */
-#memory.35 { color: #fe8019; border-color: #fe8019; } /* orange */
-#memory.40 { color: #fe8019; border-color: #fe8019; }
-#memory.45 { color: #fe8019; border-color: #fe8019; }
-#memory.50 { color: #fe8019; border-color: #fe8019; }
-#memory.55 { color: #fe8019; border-color: #fe8019; }
+#memory.20 { color: #a3bd51; border-color: #a3bd51; }
+#memory.25 { color: #b8bb26; border-color: #b8bb26; }
+#memory.30 { color: #d7bc2b; border-color: #d7bc2b; }
 
-/* Высокая нагрузка (Теплый Красный) */
-#memory.60 { color: #fb4934; border-color: #fb4934; } /* bright_red */
-#memory.65 { color: #fb4934; border-color: #fb4934; }
-#memory.70 { color: #fb4934; border-color: #fb4934; }
-#memory.75 { color: #cc241d; border-color: #cc241d; } /* neutral_red */
-#memory.80 { color: #cc241d; border-color: #cc241d; }
+#memory.35 { color: #fabd2f; border-color: #fabd2f; }
+#memory.40 { color: #f2af2c; border-color: #f2af2c; }
+#memory.45 { color: #ea9f2a; border-color: #ea9f2a; }
 
-/* Критическая нагрузка (Акцентный Красный) */
-#memory.85 { color: #cc241d; border-color: #cc241d; }
-#memory.90 { color: #9d0006; border-color: #9d0006; } /* dark_red */
+#memory.50 { color: #e18f29; border-color: #e18f29; }
+#memory.55 { color: #d97f28; border-color: #d97f28; }
+#memory.60 { color: #fe8019; border-color: #fe8019; }
+
+#memory.65 { color: #fd7122; border-color: #fd7122; }
+#memory.70 { color: #fc622b; border-color: #fc622b; }
+#memory.75 { color: #fb4934; border-color: #fb4934; }
+
+#memory.80 { color: #eb3c2c; border-color: #eb3c2c; }
+#memory.85 { color: #db2f25; border-color: #db2f25; }
+#memory.90 { color: #cc241d; border-color: #cc241d; }
+
 #memory.95 { 
     color: #fb4934; 
-    border-color: #fb4934; 
+    border-color: #cc241d; 
     text-shadow: 0 0 5px #cc241d; 
     box-shadow: inset 0 0 5px rgba(204, 36, 29, 0.4); 
 }
 
 #cpu {
-  font-size: 7px;
-  color: #b8bb26; /* Gruvbox Green */
+  font-size: 10px;
+  color: #b8bb26; 
+  padding: 0 0;
 }
 
-/* 0-35%: Спокойная зона (Зеленый -> Салатовый) */
 #cpu.s5   { color: #b8bb26; text-shadow: 0 0 6px #b8bb26; border-color: #b8bb26; }
-#cpu.s10  { color: #b8bb26; text-shadow: 0 0 6px #b8bb26; border-color: #b8bb26; }
-#cpu.s15  { color: #b8bb26; text-shadow: 0 0 6px #b8bb26; border-color: #b8bb26; }
-#cpu.s20  { color: #8ec07c; text-shadow: 0 0 6px #8ec07c; border-color: #8ec07c; } /* Aqua */
-#cpu.s25  { color: #8ec07c; text-shadow: 0 0 6px #8ec07c; border-color: #8ec07c; }
-#cpu.s30  { color: #8ec07c; text-shadow: 0 0 6px #8ec07c; border-color: #8ec07c; }
-#cpu.s35  { color: #8ec07c; text-shadow: 0 0 6px #8ec07c; border-color: #8ec07c; }
+#cpu.s10  { color: #a9be42; text-shadow: 0 0 6px #a9be42; border-color: #a9be42; }
+#cpu.s15  { color: #9bc15f; text-shadow: 0 0 6px #9bc15f; border-color: #9bc15f; }
+#cpu.s20  { color: #8ec07c; text-shadow: 0 0 6px #8ec07c; border-color: #8ec07c; } 
+#cpu.s25  { color: #99c272; text-shadow: 0 0 6px #99c272; border-color: #99c272; }
+#cpu.s30  { color: #a5c368; text-shadow: 0 0 6px #a5c368; border-color: #a5c368; }
+#cpu.s35  { color: #b1c55f; text-shadow: 0 0 6px #b1c55f; border-color: #b1c55f; }
 
-/* 40-65%: Средняя нагрузка (Желтый -> Оранжевый) */
 #cpu.s40  { color: #fabd2f; text-shadow: 0 0 6px #fabd2f; border-color: #fabd2f; }
-#cpu.s45  { color: #fabd2f; text-shadow: 0 0 6px #fabd2f; border-color: #fabd2f; }
-#cpu.s50  { color: #fabd2f; text-shadow: 0 0 6px #fabd2f; border-color: #fabd2f; }
-#cpu.s55  { color: #d79921; text-shadow: 0 0 6px #d79921; border-color: #d79921; } /* Yellow/Gold */
+#cpu.s45  { color: #f1b42d; text-shadow: 0 0 6px #f1b42d; border-color: #f1b42d; }
+#cpu.s50  { color: #e9ab2a; text-shadow: 0 0 6px #e9ab2a; border-color: #e9ab2a; }
+#cpu.s55  { color: #d79921; text-shadow: 0 0 6px #d79921; border-color: #d79921; } 
+
 #cpu.s60  { color: #fe8019; text-shadow: 0 0 6px #fe8019; border-color: #fe8019; }
-#cpu.s65  { color: #fe8019; text-shadow: 0 0 6px #fe8019; border-color: #fe8019; }
-
-/* 70-90%: Высокая нагрузка (Оранжевый -> Красный) */
+#cpu.s65  { color: #eb7115; text-shadow: 0 0 6px #eb7115; border-color: #eb7115; }
 #cpu.s70  { color: #d65d0e; text-shadow: 0 0 6px #d65d0e; border-color: #d65d0e; }
-#cpu.s75  { color: #d65d0e; text-shadow: 0 0 6px #d65d0e; border-color: #d65d0e; }
-#cpu.s80  { color: #fb4934; text-shadow: 0 0 6px #fb4934; border-color: #fb4934; } /* Bright Red */
-#cpu.s85  { color: #fb4934; text-shadow: 0 0 6px #fb4934; border-color: #fb4934; }
-#cpu.s90  { color: #fb4934; text-shadow: 0 0 6px #fb4934; border-color: #fb4934; }
+#cpu.s75  { color: #e85321; text-shadow: 0 0 6px #e85321; border-color: #e85321; }
 
-/* 95-100%: Критическая нагрузка (Глубокий Красный) */
-#cpu.s95  { color: #cc241d; text-shadow: 0 0 8px #cc241d; border-color: #cc241d; } /* Neutral Red */
+#cpu.s80  { color: #fb4934; text-shadow: 0 0 6px #fb4934; border-color: #fb4934; } 
+#cpu.s85  { color: #eb3c2c; text-shadow: 0 0 6px #eb3c2c; border-color: #eb3c2c; }
+#cpu.s90  { color: #dc2e25; text-shadow: 0 0 6px #dc2e25; border-color: #dc2e25; }
+
+#cpu.s95  { color: #cc241d; text-shadow: 0 0 8px #cc241d; border-color: #cc241d; } 
 #cpu.s100 { color: #cc241d; text-shadow: 0 0 12px #fb4934; border-color: #cc241d; font-weight: bold; }
 
 #custom-cava {
@@ -193,39 +193,34 @@ tooltip {
 #wireplumber {
   padding: 5px 2px;
   border: 1px solid;
-  transition: all 0.3s ease; /* Добавит плавности при смене громкости */
+  transition: all 0.3s ease; 
   color: #83a598;
 }
 
-/* 0-20%: Холодные тона (Blue/Aqua) */
 #wireplumber.s5   { color: #83a598; text-shadow: 0 0 6px #83a598; border-color: #83a598; }
-#wireplumber.s10  { color: #83a598; text-shadow: 0 0 6px #83a598; border-color: #83a598; }
+#wireplumber.s10  { color: #86b28a; text-shadow: 0 0 6px #86b28a; border-color: #86b28a; }
 #wireplumber.s15  { color: #8ec07c; text-shadow: 0 0 6px #8ec07c; border-color: #8ec07c; }
-#wireplumber.s20  { color: #8ec07c; text-shadow: 0 0 6px #8ec07c; border-color: #8ec07c; }
+#wireplumber.s20  { color: #9bbe51; text-shadow: 0 0 6px #9bbe51; border-color: #9bbe51; }
 
-/* 25-45%: Зеленый и салатовый (Green) */
 #wireplumber.s25  { color: #b8bb26; text-shadow: 0 0 6px #b8bb26; border-color: #b8bb26; }
-#wireplumber.s30  { color: #b8bb26; text-shadow: 0 0 6px #b8bb26; border-color: #b8bb26; }
-#wireplumber.s35  { color: #b8bb26; text-shadow: 0 0 6px #b8bb26; border-color: #b8bb26; }
+#wireplumber.s30  { color: #cfbc2a; text-shadow: 0 0 6px #cfbc2a; border-color: #cfbc2a; }
+#wireplumber.s35  { color: #e6bd2d; text-shadow: 0 0 6px #e6bd2d; border-color: #e6bd2d; }
 #wireplumber.s40  { color: #fabd2f; text-shadow: 0 0 6px #fabd2f; border-color: #fabd2f; }
-#wireplumber.s45  { color: #fabd2f; text-shadow: 0 0 6px #fabd2f; border-color: #fabd2f; }
+#wireplumber.s45  { color: #f0ad2c; text-shadow: 0 0 6px #f0ad2c; border-color: #f0ad2c; }
 
-/* 50-70%: Желтый и песочный (Yellow/Orange) */
-#wireplumber.s50  { color: #fabd2f; text-shadow: 0 0 6px #fabd2f; border-color: #fabd2f; }
+#wireplumber.s50  { color: #e69d29; text-shadow: 0 0 6px #e69d29; border-color: #e69d29; }
 #wireplumber.s55  { color: #d79921; text-shadow: 0 0 6px #d79921; border-color: #d79921; }
-#wireplumber.s60  { color: #d79921; text-shadow: 0 0 6px #d79921; border-color: #d79921; }
+#wireplumber.s60  { color: #ea8c1d; text-shadow: 0 0 6px #ea8c1d; border-color: #ea8c1d; }
 #wireplumber.s65  { color: #fe8019; text-shadow: 0 0 6px #fe8019; border-color: #fe8019; }
-#wireplumber.s70  { color: #fe8019; text-shadow: 0 0 6px #fe8019; border-color: #fe8019; }
+#wireplumber.s70  { color: #ea6e14; text-shadow: 0 0 6px #ea6e14; border-color: #ea6e14; }
 
-/* 75-90%: Насыщенный оранжевый (Orange/DarkOrange) */
-#wireplumber.s75  { color: #fe8019; text-shadow: 0 0 6px #fe8019; border-color: #fe8019; }
-#wireplumber.s80  { color: #d65d0e; text-shadow: 0 0 6px #d65d0e; border-color: #d65d0e; }
-#wireplumber.s85  { color: #d65d0e; text-shadow: 0 0 6px #d65d0e; border-color: #d65d0e; }
+#wireplumber.s75  { color: #d65d0e; text-shadow: 0 0 6px #d65d0e; border-color: #d65d0e; }
+#wireplumber.s80  { color: #e85321; text-shadow: 0 0 6px #e85321; border-color: #e85321; }
+#wireplumber.s85  { color: #f24e2a; text-shadow: 0 0 6px #f24e2a; border-color: #f24e2a; }
 #wireplumber.s90  { color: #fb4934; text-shadow: 0 0 8px #fb4934; border-color: #fb4934; }
 
-/* 95-100%: Тревожный красный (Red) */
-#wireplumber.s95  { color: #fb4934; text-shadow: 0 0 8px #fb4934; border-color: #fb4934; }
-#wireplumber.s100 { color: #cc241d; text-shadow: 0 0 12px #fb4934; font-weight: bold; border-color: #cc241d; }
+#wireplumber.s95  { color: #e33628; text-shadow: 0 0 8px #e33628; border-color: #e33628; }
+#wireplumber.s100 { color: #cc241d; text-shadow: 0 0 12px #fb4934; font-weight: bold; border-color: #cc241d; font-size: 12px; }
 
 /* Состояние Muted */
 #wireplumber.muted {

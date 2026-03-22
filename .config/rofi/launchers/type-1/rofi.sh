@@ -18,8 +18,8 @@ fi
 # 3. pkill убивает старый swaybg, чтобы запустить новый
 # 4. swaybg ставит размытый фон
 ExecCmd="bash -c ' \
-  swww img --transition-duration 2 --transition-fps 60 --transition-type wipe \"\$1\"; \
-  magick \"\$1\" -blur 0x20 \"$BlurredWall\"; \
+  swww img --transition-duration 2 --transition-fps 60 --transition-type any \"\$1\"; \
+  magick \"\$1\" -blur 0x15 \"$BlurredWall\"; \
   pkill swaybg; \
   swaybg -i \"$BlurredWall\" -m fill & \
   echo \"\$(dirname \"\$1\")\" > \"$CacheFile\" \
